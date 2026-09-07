@@ -29,9 +29,9 @@
 	<skos:altLabel xml:lang="de">Materiale Beschreibung</skos:altLabel>
 	<skos:altLabel xml:lang="fr">description du matériel, description du matériau</skos:altLabel>
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Colour"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialcomponents"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialfabric"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialproperty"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialProperty"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialComponents"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialFabric"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/Colour">
@@ -1082,27 +1082,6 @@
 	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Pink"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/Materialcomponents">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:definition xml:lang="en">The components of geological materials can be of very diverse size, shape and nature, and display a variety of more or less ordered mutual arrangement. Besides macroscopic components, matrix and cement can be further distinguished based on their smaller size and/or different genetic history.</skos:definition>
-	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
-	<skos:topConceptOf rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
-	<skos:prefLabel xml:lang="en">material components</skos:prefLabel>
-	<skos:prefLabel xml:lang="de">Materialkomponente</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">composant matériel</skos:prefLabel>
-	<skos:prefLabel xml:lang="it">componenti del materiale</skos:prefLabel>
-	<skos:altLabel xml:lang="en">components of the material</skos:altLabel>
-	<skos:altLabel xml:lang="de">Komponente des Materials</skos:altLabel>
-	<skos:altLabel xml:lang="fr">composant du matériau</skos:altLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialdescription"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentsize"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentshape"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentangularity"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentnature"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Matrix"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Cement"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/Componentsize">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:definition xml:lang="en">As most geological materials have a more or less heterogeous size distribution of their components, the "grainsize" (of any constitutive elements, such as crystals, clasts or fossils) is to be understood as a generic approximation in terms of a unique modal size-range.</skos:definition>
@@ -1114,7 +1093,7 @@
 	<skos:altLabel xml:lang="en">component size, grainsize</skos:altLabel>
 	<skos:altLabel xml:lang="de">Korngrösse</skos:altLabel>
 	<skos:altLabel xml:lang="fr">granulométrie</skos:altLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialcomponents"/>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialComponents"/>
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Phaneritic"/>
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Aphanitic"/>
 </rdf:Description>
@@ -1477,7 +1456,7 @@
 	<skos:prefLabel xml:lang="it">forma dei componenti</skos:prefLabel>
 	<skos:altLabel xml:lang="en">component shape, form, habit</skos:altLabel>
 	<skos:altLabel xml:lang="fr">habitus</skos:altLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialcomponents"/>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialComponents"/>
 	<skos:related rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentangularity"/>
 </rdf:Description>
 
@@ -1494,7 +1473,7 @@
 	<skos:altLabel xml:lang="de">Abrundung der Komponenten</skos:altLabel>
 	<skos:altLabel xml:lang="fr">angulosité, émoussé, arrondi</skos:altLabel>
 	<skos:altLabel xml:lang="it">arrontondamento dei componenti</skos:altLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialcomponents"/>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialComponents"/>
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Shapeveryangular"/>
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Shapeangular"/>
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Shapesubangular"/>
@@ -1580,23 +1559,6 @@
 	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentangularity"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/Componentnature">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:definition xml:lang="en">The nature of the components plays a major role in the composition and properties of a material. It also serves as a basis for its naming and classification.</skos:definition>
-	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
-	<skos:topConceptOf rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
-	<skos:prefLabel xml:lang="en">nature of components</skos:prefLabel>
-	<skos:prefLabel xml:lang="de">Natur der Komponenten</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">nature des composants</skos:prefLabel>
-	<skos:prefLabel xml:lang="it">natura dei componenti</skos:prefLabel>
-	<skos:altLabel xml:lang="en">composition</skos:altLabel>
-	<skos:altLabel xml:lang="de">Art der Komponenten</skos:altLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialcomponents"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Minerals"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentbiogenic"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentlithic"/>
-</rdf:Description>
-
 <rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/Minerals">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:definition xml:lang="en">Mineral components refer to naturally occurring, inorganic solids with a specific chemical composition and orderly internal crystal structure.</skos:definition>
@@ -1607,7 +1569,7 @@
 	<skos:prefLabel xml:lang="it">componenti minerali</skos:prefLabel>
 	<skos:altLabel xml:lang="en">minerals</skos:altLabel>
 	<skos:altLabel xml:lang="de">Mineralkomponenten, Mineralien</skos:altLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentnature"/>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/ComponentNature"/>
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Nativeelements"/>
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Industrialminerals"/>
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Gemstones"/>
@@ -4394,7 +4356,7 @@ Synonyms of Gypsum</skos:definition>
 	<skos:prefLabel xml:lang="fr">composants biogéniques</skos:prefLabel>
 	<skos:prefLabel xml:lang="it">componenti biogenici</skos:prefLabel>
 	<skos:altLabel xml:lang="fr">composants biodérivés</skos:altLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentnature"/>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/ComponentNature"/>
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentorganic"/>
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Fossiltraces"/>
 	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Fossilparts"/>
@@ -4450,7 +4412,7 @@ Synonyms of Gypsum</skos:definition>
 	<skos:altLabel xml:lang="de">Lithoklasten</skos:altLabel>
 	<skos:altLabel xml:lang="fr">lithoclastes, composants lithiques</skos:altLabel>
 	<skos:altLabel xml:lang="it">litoclasti, componenti litici</skos:altLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentnature"/>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/ComponentNature"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/Matrix">
@@ -4463,7 +4425,7 @@ Synonyms of Gypsum</skos:definition>
 	<skos:prefLabel xml:lang="it">matrice</skos:prefLabel>
 	<skos:altLabel xml:lang="en">groundmass</skos:altLabel>
 	<skos:altLabel xml:lang="de">Grundmasse</skos:altLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialcomponents"/>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialComponents"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/Cement">
@@ -4474,23 +4436,7 @@ Synonyms of Gypsum</skos:definition>
 	<skos:prefLabel xml:lang="de">Zement</skos:prefLabel>
 	<skos:prefLabel xml:lang="fr">ciment</skos:prefLabel>
 	<skos:prefLabel xml:lang="it">cemento</skos:prefLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialcomponents"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/Materialfabric">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:definition xml:lang="en">The three-dimensional mutual arrangement encompasses, among other things, the relative abundance (proportion), spatial orientation (ggf. preferred orientation/alignment), packing, size (matrix vs. éléments figurés) and shape of components (in particular the intergranular contacts/cement).</skos:definition>
-	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
-	<skos:topConceptOf rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
-	<skos:prefLabel xml:lang="en">mutual arrangement of components</skos:prefLabel>
-	<skos:prefLabel xml:lang="de">mutuale Anordnung der Komponenten</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">arrangement mutuel des composants</skos:prefLabel>
-	<skos:prefLabel xml:lang="it">disposizione mutuale dei componenti</skos:prefLabel>
-	<skos:altLabel xml:lang="en">(petro)fabric</skos:altLabel>
-	<skos:altLabel xml:lang="de">Gefüge</skos:altLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialdescription"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componenttexture"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentstructure"/>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialComponents"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/Componenttexture">
@@ -4504,7 +4450,7 @@ Synonyms of Gypsum</skos:definition>
 	<skos:prefLabel xml:lang="it">tessitura microscopica</skos:prefLabel>
 	<skos:altLabel xml:lang="en">microstructure</skos:altLabel>
 	<skos:altLabel xml:lang="fr">microstructure</skos:altLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialfabric"/>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialFabric"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/Componentstructure">
@@ -4516,21 +4462,7 @@ Synonyms of Gypsum</skos:definition>
 	<skos:prefLabel xml:lang="de">makroskopische Textur</skos:prefLabel>
 	<skos:prefLabel xml:lang="fr">structure macroscopique</skos:prefLabel>
 	<skos:prefLabel xml:lang="it">struttua macroscopica</skos:prefLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialfabric"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/Materialproperty">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:definition xml:lang="en">Material properties encompass more applied characteristics that result from one of more descriptive parameters. These secondary properties are controlled by the main textural attributes.</skos:definition>
-	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
-	<skos:topConceptOf rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
-	<skos:prefLabel xml:lang="en">material property</skos:prefLabel>
-	<skos:prefLabel xml:lang="de">Materialeigenschaft</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">propriété du matériau</skos:prefLabel>
-	<skos:prefLabel xml:lang="it">proprietà del materiale</skos:prefLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialdescription"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Porosity"/>
-	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Permeability"/>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialFabric"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/Porosity">
@@ -4543,7 +4475,7 @@ Synonyms of Gypsum</skos:definition>
 	<skos:prefLabel xml:lang="de">Porosität</skos:prefLabel>
 	<skos:prefLabel xml:lang="fr">porosité</skos:prefLabel>
 	<skos:prefLabel xml:lang="it">porosità</skos:prefLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialproperty"/>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialProperty"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/Permeability">
@@ -4557,7 +4489,75 @@ Synonyms of Gypsum</skos:definition>
 	<skos:prefLabel xml:lang="it">permeabilità</skos:prefLabel>
 	<skos:altLabel xml:lang="de">Durchlässigkeit</skos:altLabel>
 	<skos:altLabel xml:lang="fr">étanchéité</skos:altLabel>
-	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialproperty"/>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/MaterialProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Material properties encompass more applied characteristics that result from one of more descriptive parameters. These secondary properties are controlled by the main textural attributes.</skos:definition>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
+	<skos:topConceptOf rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
+	<skos:prefLabel xml:lang="en">material property</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Materialeigenschaft</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">propriété du matériau</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">proprietà del materiale</skos:prefLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialdescription"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Porosity"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Permeability"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/MaterialComponents">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The components of geological materials can be of very diverse size, shape and nature, and display a variety of more or less ordered mutual arrangement. Besides macroscopic components, matrix and cement can be further distinguished based on their smaller size and/or different genetic history.</skos:definition>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
+	<skos:topConceptOf rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
+	<skos:prefLabel xml:lang="en">material components</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Materialkomponente</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">composant matériel</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">componenti del materiale</skos:prefLabel>
+	<skos:altLabel xml:lang="en">components of the material</skos:altLabel>
+	<skos:altLabel xml:lang="de">Komponente des Materials</skos:altLabel>
+	<skos:altLabel xml:lang="fr">composant du matériau</skos:altLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialdescription"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentsize"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentshape"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentangularity"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Matrix"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Cement"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/ComponentNature"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/ComponentNature">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The nature of the components plays a major role in the composition and properties of a material. It also serves as a basis for its naming and classification.</skos:definition>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
+	<skos:topConceptOf rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
+	<skos:prefLabel xml:lang="en">nature of components</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Natur der Komponenten</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">nature des composants</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">natura dei componenti</skos:prefLabel>
+	<skos:altLabel xml:lang="en">composition</skos:altLabel>
+	<skos:altLabel xml:lang="de">Art der Komponenten</skos:altLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialComponents"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Minerals"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentbiogenic"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentlithic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/MaterialFabric">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The three-dimensional mutual arrangement encompasses, among other things, the relative abundance (proportion), spatial orientation (ggf. preferred orientation/alignment), packing, size (matrix vs. éléments figurés) and shape of components (in particular the intergranular contacts/cement).</skos:definition>
+	<skos:inScheme rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
+	<skos:topConceptOf rdf:resource="https://lexic.swissgeol.ch/materialDescription/MaterialDescription"/>
+	<skos:prefLabel xml:lang="en">mutual arrangement of components</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">mutuale Anordnung der Komponenten</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">arrangement mutuel des composants</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">disposizione mutuale dei componenti</skos:prefLabel>
+	<skos:altLabel xml:lang="en">(petro)fabric</skos:altLabel>
+	<skos:altLabel xml:lang="de">Gefüge</skos:altLabel>
+	<skos:broader rdf:resource="https://lexic.swissgeol.ch/materialDescription/Materialdescription"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componenttexture"/>
+	<skos:narrower rdf:resource="https://lexic.swissgeol.ch/materialDescription/Componentstructure"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="https://lexic.swissgeol.ch/materialDescription/CollectionColor">
